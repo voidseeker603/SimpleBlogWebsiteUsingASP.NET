@@ -1,0 +1,56 @@
+﻿
+@{
+    //Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        .btn-container {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Registration Website</h1>
+        <p>This website allows you to register your name and email.</p>
+        <p>Once registered, you will have access to exclusive content and updates.</p>
+
+        <div class="btn-container">
+            <h2>AddPerson</h2>
+            <a href="/Person/AddPerson" class="btn btn-primary">Add</a>
+        </div>
+
+        <div class="btn-container">
+            <h2>DisplayPerson</h2>
+            <a href="/Person/DisplayPersons" class="btn btn-primary">Display</a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
