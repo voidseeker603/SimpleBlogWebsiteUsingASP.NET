@@ -1,5 +1,4 @@
-﻿
-@model MvcCoreTut.Models.Domain.Person
+﻿@model MvcCoreTut.Models.Domain.Person
 
 <form asp-action="EditPerson">
     <input asp-for="Id" type="Hidden" class="form-control">
@@ -10,16 +9,15 @@
         <span class="text-danger" asp-validation-for="Name"></span>
     </div>
     <div class="mb-3">
-        <label asp-for="Email" class="form-label">Email</label>
-        <input asp-for="Email" type="text" class="form-control">
+        <label asp-for="Email" class="form-label">Blog</label>
+        <textarea asp-for="Email" class="form-control" rows="5"></textarea>
         <span class="text-danger" asp-validation-for="Email"></span>
-
     </div>
     @if (TempData["msg"] != null)
     {
-            <div class="mb-3">
+                <div class="mb-3">
             @TempData["msg"]
-            </div>
+                </div>
     }
 
 

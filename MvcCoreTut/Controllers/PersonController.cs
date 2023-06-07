@@ -92,5 +92,14 @@ namespace MvcCoreTut.Controllers
             catch (Exception ex) { }
             return RedirectToAction("DisplayPersons");
         }
+        public IActionResult ViewBlog(int id)
+        {
+            // Retrieve the blog with the specified ID from your data source
+            var blog = _ctx.Person.Find(id);
+
+            // Pass the blog object to the view
+            return View(blog);
+        }
+
     }
 }

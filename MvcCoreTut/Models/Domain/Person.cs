@@ -11,7 +11,7 @@ namespace MvcCoreTut.Models.Domain
         public string? Name { get; set; }
 
         [System.ComponentModel.DataAnnotations.Required]
-        [System.ComponentModel.DataAnnotations.EmailAddress]
+        
         public string? Email { get; set; }
     }
 
